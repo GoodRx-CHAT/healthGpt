@@ -24,10 +24,9 @@ function App() {
               Welcome to HealthGPT!
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              HealthGPT provides Ai chat services on top of Open.ai for Chat
-              Health Assistance Topics, aka CHAT. We hope you enjoy your stay
-              and find the platform useful. Oh ya, checkout our upcoming events
-              with Hearty!
+              HealthGPT is a platform and tool for Chat Health Assistance Teams,
+              CHAT. We hope you enjoy your stay and find the platform useful. Oh
+              ya, checkout our upcoming events with Hearty!
             </p>
           </div>
           <div>

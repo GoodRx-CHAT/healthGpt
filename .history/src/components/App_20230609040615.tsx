@@ -17,17 +17,16 @@ function App() {
             <div className="my-4">
               <Avatar
                 size="large"
-                src="https://robohash.org/healthgpt?set=set2&bgset=bg1&size=200x200"
+                src="https://www.gravatar.com/avatar/4405735f6f3129e0286d9d43e7b460d0"
               />
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Welcome to HealthGPT!
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              HealthGPT provides Ai chat services on top of Open.ai for Chat
-              Health Assistance Topics, aka CHAT. We hope you enjoy your stay
-              and find the platform useful. Oh ya, checkout our upcoming events
-              with Hearty!
+              HealthGPT is a platform and tool for Chat Health Assistance Teams,
+              CHAT. We hope you enjoy your stay and find the platform useful. Oh
+              ya, checkout our upcoming events with Hearty!
             </p>
           </div>
           <div>
