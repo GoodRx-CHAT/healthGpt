@@ -1,12 +1,9 @@
 import Avatar from 'components/Avatar'
+import { ChatBubble } from './ChatBubble/ChatBubble'
 
 function App() {
   const startChat = () => {
-    window.open(
-      'https://app.hearty.ai/healthgpt/healthgpt',
-      'hearty',
-      'width=400,height=600'
-    )
+    console.log('start chat')
   }
 
   return (
@@ -103,6 +100,7 @@ function App() {
                 </div>
               </div>
             </div>
+            <ChatBubble />
           </div>
         </div>
       </div>
