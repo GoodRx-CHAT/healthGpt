@@ -13,37 +13,18 @@
 
 import { useEffect, useState } from 'react'
 
-export function submitUserMessage(message: string) {
-  return fetch('/api/submitUserMessage', {
+export async function submitUserMessage(message: string): Promise<void> {
+  const response = await fetch('/api/submitUserMessage', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ message })
   })
-}
 
-function BuildPromptMessage(message: string) {
-  const prompts = useChatPromptsForGpt()
-  return {
-    message,
-    timestamp: Date.now()
+  if (!response.ok) {
+    throw new Error(response.statusText)
   }
-}
 
-type ChatPrompt = {
-  message: string
-  timestamp: number
-}
-
-function useChatPromptsForGpt(): ChatPrompt[] {
-  const [prompts, setPrompts] = useState<ChatPrompt[]>([])
-
-  useEffect(() => {
-    fetch('/api/getChatPromptsForGpt')
-      .then((res) => res.json())
-      .then(setPrompts)
-  }, [])
-
-  return prompts
+  return response.json()
 }
