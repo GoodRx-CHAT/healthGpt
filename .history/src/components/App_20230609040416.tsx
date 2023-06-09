@@ -1,14 +1,6 @@
 import Avatar from 'components/Avatar'
 
 function App() {
-  const startChat = () => {
-    window.open(
-      'https://app.hearty.ai/healthgpt/healthgpt',
-      'hearty',
-      'width=400,height=600'
-    )
-  }
-
   return (
     <div className="relative overflow-hidden bg-white">
       <div className="h-screen sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
@@ -17,27 +9,26 @@ function App() {
             <div className="my-4">
               <Avatar
                 size="large"
-                src="https://robohash.org/healthgpt?set=set2&bgset=bg1&size=200x200"
+                src="https://www.gravatar.com/avatar/4405735f6f3129e0286d9d43e7b460d0"
               />
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Welcome to HealthGPT!
             </h1>
             <p className="mt-4 text-xl text-gray-500">
-              HealthGPT provides Ai chat services on top of Open.ai for Chat
-              Health Assistance Topics, aka CHAT. We hope you enjoy your stay
-              and find the platform useful. Oh ya, checkout our upcoming events
-              with Hearty!
+              HealthGPT is a platform and tool for Chat Health Assistance Teams,
+              CHAT. We hope you enjoy your stay and find the platform useful. Oh
+              ya, checkout our upcoming events with Hearty!
             </p>
           </div>
           <div>
             <div className="my-10">
-              <button
-                onClick={startChat}
+              <a
+                href="vscode://"
                 className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2"
               >
-                Give it a try
-              </button>
+                Start building for free
+              </a>
               <div
                 aria-hidden="true"
                 className="pointer-events-none mt-10 md:mt-0 lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
